@@ -114,8 +114,6 @@ HR
 # runs
 ex_*
 tx_*
-/LR/
-/results/
-/HR/
 /LPIPSmodels/
 /runGan.py
+/.idea/
