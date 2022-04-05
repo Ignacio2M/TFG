@@ -10,3 +10,7 @@ SR:https://github.com/Ignacio2M/TFG/blob/main/Transform/SR.py
 Resultados SR: https://github.com/Ignacio2M/TFG/tree/main/Test_images/Final/Out_final 
 
 Resultados Originales: https://github.com/Ignacio2M/TFG/tree/main/TecoGAN-master/results/calendar
+
+# Dtatset
+
+ucf101: https://www.crcv.ucf.edu/research/data-sets/ucf101/
