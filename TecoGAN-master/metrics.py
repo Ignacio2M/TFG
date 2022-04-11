@@ -4,7 +4,7 @@ import os, sys
 import pandas as pd
 from LPIPSmodels import util
 import LPIPSmodels.dist_model as dm
-from skimage.measure import compare_ssim
+from skimage.metrics import structural_similarity
 
 from absl import flags
 flags.DEFINE_string('output', None, 'the path of output directory')
@@ -72,7 +72,7 @@ def psnr(img_true, img_pred):
 def ssim(img_true, img_pred): ##### SSIM ##### 
     Y_true = _rgb2ycbcr(to_uint8(img_true, 0, 255), 255)[:,:,0]
     Y_pred = _rgb2ycbcr(to_uint8(img_pred, 0, 255), 255)[:,:,0]
-    return compare_ssim(Y_true, Y_pred, data_range=Y_pred.max() - Y_pred.min())
+    return structural_similarity(Y_true, Y_pred, data_range=Y_pred.max() - Y_pred.min())
 
 def crop_8x8( img ):
     ori_h = img.shape[0]

@@ -66,10 +66,9 @@ if (runcase == 0):  # download inference data, trained models
     subprocess.call(cmd3, shell=True)
 
 elif (runcase == 1):  # inference a trained model
-    dirstr = "./../Test_images/OutPut/Net"  # the place to save the results
+    dirstr = "./../Test_images/OutPut/Net/Test_1/"  # the place to save the results
 
-    testpre = list(map(lambda index: str(index),range(47)))
-
+    testpre = os.listdir("../Test_images/OutPut/Pre/Test_1/")
     if not os.path.exists(dirstr): os.mkdir(dirstr)
 
     # run these test cases one by one:
@@ -79,7 +78,7 @@ elif (runcase == 1):  # inference a trained model
                 "--output_dir", dirstr,  # Set the place to put the results.
                 "--summary_dir", os.path.join(dirstr, 'log/'),  # Set the place to put the log.
                 "--mode", "inference",
-                "--input_dir_LR", os.path.join("../Test_images/OutPut/Pre/Test_1", testpre[nn]),  # the LR directory
+                "--input_dir_LR", os.path.join("../Test_images/OutPut/Pre/Test_1/", testpre[nn]),  # the LR directory
                 # "--input_dir_HR", os.path.join("./HR/", testpre[nn]),  # the HR directory
                 # one of (input_dir_HR,input_dir_LR) should be given
                 "--output_pre", testpre[nn],  # the subfolder to save current scene, optional

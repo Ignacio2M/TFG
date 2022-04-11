@@ -7048,3 +7048,7 @@ saving image output_out_84
 saving image output_out_85
 saving image output_out_86
 total time 146.33476376533508, frame number 92
+input shape: [1, 541, 588, 3]
+output shape: [1, 2164, 2352, 3]
+input shape: [1, 541, 588, 3]
+output shape: [1, 2164, 2352, 3]
