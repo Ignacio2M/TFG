@@ -64,12 +64,13 @@ class SR:
             load_image_dir = "{}/{}".format(index_dir, len(images_dir))
             initial_shape = np.array(ft.image_load(path=aux_path, name=list_img_path[0])).shape[:2]
             final_shape = (self.translate_vecto * num_samples) + \
-                          np.full((1, 2), math.sqrt(math.pow(initial_shape[0], 2) + math.pow(initial_shape[1], 2)),
+                          np.full((1, 2), math.sqrt(math.pow(initial_shape[0]/2, 2) + math.pow(initial_shape[1]/2, 2))*2,
                                   dtype=int)[0]
+            final_shape=[final_shape.tolist()[1],final_shape.tolist()[0]]
             uax_info_dict = {
                 "save_path": os.path.join(self.init_save_path, images_dir),
-                "initial_shape": initial_shape,
-                "final_shape": final_shape.tolist(),
+                "initial_shape": [initial_shape[1],initial_shape[0]],
+                "final_shape": final_shape,
                 "samples": []
             }
             angle = 0
@@ -98,7 +99,7 @@ class SR:
                         aux_translate_vecto += self.translate_vecto
 
                     image = ft.image_load(path=aux_path, name=img_path)
-                    point, image = self._retate(image, angle, (translate_vecto * -1), final_shape)
+                    point, image = self._rotate(image, angle, (translate_vecto * -1), final_shape)
 
                     ft.save(
                         path=os.path.join(self.init_save_path + '/' + images_dir, "{}_{}".format(images_dir, sample)),
@@ -121,7 +122,7 @@ class SR:
         with open("{}/info.json".format(self.init_save_path), "w") as f:
             f.write(json.dumps(info_dict, indent=4))
 
-    def _retate(self, image, angle, translate_vector, final_shape, points=None):
+    def _rotate(self, image, angle, translate_vector, final_shape, points=None):
         transformation_matrix = self._transform_matrix(angle, translate_vector)
         nrows, ncols, _ = image.shape
         original_corners = np.array([[0, 0, 1], [ncols, 0, 1], [ncols, nrows, 1], [0, nrows, 1]]).T
@@ -129,23 +130,37 @@ class SR:
         x, y, new_width, new_height = cv.boundingRect(new_corners.T.reshape(1, 4, 2))
         # print(new_width, new_height)
         # print(transformation_matrix)
-        # transformation_matrix[:, 2] = np.array([-x, -y])
+        transformation_matrix[:, 2] = np.array([-x, -y])
         # print(transformation_matrix)
         image = cv.warpAffine(image, transformation_matrix, final_shape)
 
-        pyplot.imshow(image)
-        pyplot.show()
+        # pyplot.imshow(image)
+        # pyplot.show()
 
         if points is None:
             new_corners = np.int64(np.dot(transformation_matrix, original_corners))
             return new_corners, image
         else:
-            new_points = np.int64(np.dot(transformation_matrix, points))*4
-            # print(new_points)
-            image = image[new_points.T[0][0]: new_points.T[0][0]+960, new_points.T[0][1]: new_points.T[0][1]+1280,:]
-            # pyplot.imshow(image)
-            # pyplot.show()
+            new_points = np.int64(np.dot(transformation_matrix, points))
+            print(new_points.T[2,:]-new_points.T[0,:])
+            # image = image[]
+            pyplot.imshow(image)
+            pyplot.show()
             return image
+
+    def _un_rotate(self, image, angle, translate_vector, final_shape, points):
+        transformation_matrix = self._transform_matrix(angle, translate_vector)
+        nrows, ncols, _ = image.shape
+        original_corners = np.array(points)
+        new_corners = np.int64(np.dot(transformation_matrix, original_corners))
+        x, y, new_width, new_height = cv.boundingRect(new_corners.T.reshape(1, 4, 2))
+        # print(new_width, new_height)
+        # print(transformation_matrix)
+        transformation_matrix[:, 2] = np.array([-x, -y])
+        # print(transformation_matrix)
+        image = cv.warpAffine(image, transformation_matrix, (1280, 960))
+        return image
+
 
     def _transform_matrix(self, rotate_angle, translate_vector: np.array) -> np.array:
         rotate_angle = math.radians(rotate_angle)
@@ -184,11 +199,14 @@ class SR:
                     aux_info = info["Images_data"][index_path_samples]["samples"][index_sample][index_img]
                     points_init = np.full((3, 4), 1 / 4)
                     points_init[:2, :] = aux_info["pointsImages"]
-                    # points_init = points_init * 4
+                    points_init = points_init * 4
                     angle = 360 - aux_info["angle"]
                     translate_vector = np.array(aux_info["translate_vector"])*4
+                    translate_vector = [translate_vector[1], translate_vector[0]]
                     image = ft.image_load(path=path_smple_images, name=img_path)
-                    image = self._retate(image, angle, translate_vector, image.shape[:2], points_init)
+                    image = self._un_rotate(image, angle, (0,0), image.shape[:2], points_init)
+                    # pyplot.imshow(image)
+                    # pyplot.show()
                     if image_list[index_img] is None:
                         image_list[index_img] = image / len(list_samples)
                     else:

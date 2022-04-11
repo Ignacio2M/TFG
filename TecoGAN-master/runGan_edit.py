@@ -9,7 +9,10 @@ import os, subprocess, sys, shutil
 
 runcase = int(sys.argv[1])
 print("Testing test case %d" % runcase)
-
+input_dir = int(sys.argv[2])
+print("Testing test case %d" % runcase)
+input_dir = int(sys.argv[2])
+print("Testing test case %d" % runcase)
 
 def preexec():  # Don't forward signals.
     os.setpgrp()
