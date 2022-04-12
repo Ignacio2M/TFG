@@ -158,7 +158,7 @@ class SR:
         # print(transformation_matrix)
         transformation_matrix[:, 2] = np.array([-x, -y])
         # print(transformation_matrix)
-        image = cv.warpAffine(image, transformation_matrix, (1280, 960))
+        image = cv.warpAffine(image, transformation_matrix, final_shape)
         return image
 
 
@@ -203,14 +203,14 @@ class SR:
                     angle = 360 - aux_info["angle"]
                     translate_vector = np.array(aux_info["translate_vector"])*4
                     translate_vector = [translate_vector[1], translate_vector[0]]
+                    final_shape = np.array(info["Images_data"][index_path_samples]["initial_shape"])*4
                     image = ft.image_load(path=path_smple_images, name=img_path)
-                    image = self._un_rotate(image, angle, (0,0), image.shape[:2], points_init)
+                    image = self._un_rotate(image, angle, (0,0), final_shape, points_init)
                     # pyplot.imshow(image)
                     # pyplot.show()
                     if image_list[index_img] is None:
                         image_list[index_img] = image / len(list_samples)
                     else:
-                        print(image.shape)
                         image_list[index_img] = image_list[index_img] + (image / len(list_samples))
 
 

@@ -7052,3 +7052,4 @@ input shape: [1, 541, 588, 3]
 output shape: [1, 2164, 2352, 3]
 input shape: [1, 541, 588, 3]
 output shape: [1, 2164, 2352, 3]
+Backend TkAgg is interactive backend. Turning interactive mode on.
