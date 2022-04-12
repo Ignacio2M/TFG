@@ -1,4 +1,5 @@
 #! /bin/bash
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate venv-3.7
-python runGan_edit.py 1
+cd ./TecoGAN-master
+python "./runGan_edit.py"
