@@ -15,12 +15,13 @@ from Transforms import SR
 dir_images = ["Test_1"]
 
 if __name__ == '__main__':
-    sr = SR.SR( uuid="Test_2(0_3_4)_47",
-        # uuid=datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S"),
+    sr = SR.SR(uuid="Test_2(0_3_4)_47",
+               # uuid=datetime.datetime.now().strftime("%Y_%m_%d_%H_%M_%S"),
                init_load_path=os.path.join(ft.test_original_path, "LR"),
                init_save_path=ft.test_out_pre_path,
                final_load_path=ft.test_net_path,
                final_save_path=ft.test_SR_path,
+               info_metric_path="Test_images/Final",
                rotate_increment=0,
                translate_vecto=np.array([3, 4])
                )

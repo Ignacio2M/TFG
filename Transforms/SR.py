@@ -17,7 +17,7 @@ class SR:
     init_save_path: str
     final_load_path: str
     final_save_path: str
-    # info_metric_path = "../Test"
+    info_metric_path: str
     rotation_angle: int
     backGroundImage: np.array
 
@@ -27,12 +27,14 @@ class SR:
                  init_save_path: str,
                  final_load_path: str,
                  final_save_path: str,
+                 info_metric_path: str,
                  rotate_increment: int,
                  translate_vecto: np.array) -> None:
 
         self.final_save_path = os.path.join(final_save_path, uuid)
         self.final_load_path = os.path.join(final_load_path, uuid)
         self.init_save_path = os.path.join(init_save_path, uuid)
+        self.info_metric_path = os.path.join(info_metric_path, uuid)
         self.init_load_path = init_load_path
 
         self.rotation_angle = rotate_increment
@@ -53,6 +55,7 @@ class SR:
                     "Save_pre": self.init_save_path,
                     "Save_net": self.final_load_path,
                     "Save_final": self.final_save_path,
+                    "Save_metric": self.info_metric_path,
                     "Save_info": None,
                 },
                 "Pre": {}
