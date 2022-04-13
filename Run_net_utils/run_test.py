@@ -1,11 +1,4 @@
 
-'''
-several running examples, run with
-python3 runGan.py 1 # the last number is the run case number
-
-runcase == 1    inference a trained model
-
-'''
 import json
 import os, subprocess, sys, shutil
 
@@ -37,23 +30,22 @@ def folder_check(path):
 
     return path
 
+
 with open("../Test_images/info.json", "r") as json_file:
     info = json.load(json_file)["SR_info"]
     uuid = list(info.keys())[-1]
     info = info[uuid]
 
-load_path = "../"+info["Path"]["Save_final"]+"/"
+dirstr = "../" + info["Path"]["Save_final"] + "/"  # images result
+tarstr = "../Test_images/Original/HR/"  # Originals
 
-save_dir = "../"+info["Path"]["Save_metric"]+"/"
+save_dir = "../" + info["Path"]["Save_metric"] + "/"  # Save path
 
-testpre = info["Path"]["Dir"] # just put more scenes to evaluate all of them
+testpre = info["Path"]["Dir"]  # just put more scenes to evaluate all of them
 
-dirstr = load_path  # the outputs
-tarstr = "../Test_images/Original/HR/"  # the GT
 
 tar_list = [(tarstr + _) for _ in testpre]
 out_list = [(dirstr + _) for _ in testpre]
-# save_list = [(save_dir + _) for _ in testpre]
 cmd1 = ["python3", "metrics.py",
         "--output", save_dir,
         "--results", ",".join(out_list),

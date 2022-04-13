@@ -1,11 +1,3 @@
-#!/home/chona/anaconda3/envs/venv-3.7/bin/python
-'''
-several running examples, run with
-python3 runGan.py 1 # the last number is the run case number
-
-runcase == 1    inference a trained model
-
-'''
 import json
 import os, subprocess, sys, shutil
 

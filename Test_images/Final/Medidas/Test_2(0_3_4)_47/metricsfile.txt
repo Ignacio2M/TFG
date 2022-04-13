@@ -1,0 +1,98 @@
+[Configurations]:
+	output: ../Test_images/Final/Medidas/Test_2(0_3_4)_47
+	results: ../Test_images/OutPut/Pre/Test_2(0_3_4)_47Test_2
+	targets: ../Test_images/OriginalTest_2
+End of configuration
+Loading model from: /home/chona/Documentos/Uma/TFG/Git/TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+Backend TkAgg is interactive backend. Turning interactive mode on.
+[Configurations]:
+	output: ../Test_images/Final/Medidas/Test_2(0_3_4)_47/
+	results: ../Test_images/OutPut/Pre/Test_2(0_3_4)_47/Test_2
+	targets: ../Test_images/OriginalTest_2
+End of configuration
+Loading model from: /home/chona/Documentos/Uma/TFG/Git/TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+Backend TkAgg is interactive backend. Turning interactive mode on.
+[Configurations]:
+	output: ../Test_images/Final/Medidas/Test_2(0_3_4)_47/
+	results: ../Test_images/OutPut/Pre/Test_2(0_3_4)_47/Test_2
+	targets: ../Test_images/Original/Test_2
+End of configuration
+Loading model from: /home/chona/Documentos/Uma/TFG/Git/TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+Backend TkAgg is interactive backend. Turning interactive mode on.
+[Configurations]:
+	output: ../Test_images/Final/Medidas/Test_2(0_3_4)_47/
+	results: ../Test_images/OutPut/Pre/Test_2(0_3_4)_47/Test_2
+	targets: ../Test_images/Original/Test_2
+End of configuration
+Loading model from: /home/chona/Documentos/Uma/TFG/Git/TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+[Configurations]:
+	output: ../Test_images/Final/Medidas/Test_2(0_3_4)_47/
+	results: ../Test_images/OutPut/Pre/Test_2(0_3_4)_47/Test_2
+	targets: ../Test_images/Original/HR/Test_2
+End of configuration
+Loading model from: /home/chona/Documentos/Uma/TFG/Git/TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+[Configurations]:
+	output: ../Test_images/Final/Medidas/Test_2(0_3_4)_47/
+	results: ../Test_images/OutPut/Pre/Test_2(0_3_4)_47/Test_2
+	targets: ../Test_images/Original/HR/Test_2
+End of configuration
+Loading model from: /home/chona/Documentos/Uma/TFG/Git/TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+Backend TkAgg is interactive backend. Turning interactive mode on.
+[Configurations]:
+	output: ../Test_images/Final/Medidas/Test_2(0_3_4)_47/
+	results: ../Test_images/Final/Test_2(0_3_4)_47/Test_2
+	targets: ../Test_images/Original/HR/Test_2
+End of configuration
+Loading model from: /home/chona/Documentos/Uma/TFG/Git/TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+Backend TkAgg is interactive backend. Turning interactive mode on.
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/2.png
+frame 2, tar (576, 1024, 3), out (576, 1024, 3), psnr 29.92, ssim 0.78, lpips 0.26, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/3.png
+frame 3, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.22, psnr 30.24, ssim 0.78, lpips 0.24, tLPx100 4.23, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/4.png
+frame 4, tar (576, 1024, 3), out (576, 1024, 3), tOF 3.87, psnr 29.73, ssim 0.77, lpips 0.25, tLPx100 3.71, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/5.png
+frame 5, tar (576, 1024, 3), out (576, 1024, 3), tOF 3.86, psnr 29.95, ssim 0.77, lpips 0.25, tLPx100 3.70, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/6.png
+frame 6, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.61, psnr 30.44, ssim 0.78, lpips 0.25, tLPx100 2.61, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/7.png
+frame 7, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.65, psnr 30.38, ssim 0.79, lpips 0.24, tLPx100 3.12, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/8.png
+frame 8, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.81, psnr 30.00, ssim 0.79, lpips 0.24, tLPx100 2.74, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/9.png
+frame 9, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.71, psnr 28.94, ssim 0.76, lpips 0.27, tLPx100 2.78, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/10.png
+frame 10, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.15, psnr 29.09, ssim 0.76, lpips 0.27, tLPx100 2.57, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/11.png
+frame 11, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.90, psnr 29.07, ssim 0.75, lpips 0.29, tLPx100 1.40, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/12.png
+frame 12, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.86, psnr 28.41, ssim 0.72, lpips 0.30, tLPx100 2.55, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/13.png
+frame 13, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.15, psnr 28.70, ssim 0.71, lpips 0.31, tLPx100 2.92, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/14.png
+frame 14, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.42, psnr 26.54, ssim 0.63, lpips 0.37, tLPx100 4.15, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/15.png
+frame 15, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.29, psnr 27.26, ssim 0.63, lpips 0.36, tLPx100 4.54, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/16.png
+frame 16, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.37, psnr 27.75, ssim 0.65, lpips 0.35, tLPx100 3.77, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/17.png
+frame 17, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.18, psnr 27.72, ssim 0.62, lpips 0.36, tLPx100 4.46, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/18.png
+frame 18, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.35, psnr 27.46, ssim 0.65, lpips 0.35, tLPx100 4.91, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/19.png
+frame 19, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.47, psnr 27.48, ssim 0.66, lpips 0.32, tLPx100 4.61, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/20.png
+frame 20, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.44, psnr 25.46, ssim 0.60, lpips 0.39, tLPx100 4.46, crop (16, 16)
+../Test_images/Final/Test_2(0_3_4)_47/Test_2/21.png
+frame 21, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.90, psnr 26.65, ssim 0.62, lpips 0.35, tLPx100 6.72, crop (16, 16)
+PSNR_00, max 30.4410, min 25.4610, avg 28.5600
+SSIM_00, max 0.7929, min 0.5965, avg 0.7107
+LPIPS_00, max 0.3902, min 0.2435, avg 0.3009
+tOF_00, max 6.4378, min 3.8601, avg 5.1171
+tLP100_00, max 6.7250, min 1.3991, avg 3.6811
+PSNR, total frame 20, total avg 28.5600, folder avg 28.5600
+SSIM, total frame 20, total avg 0.7107, folder avg 0.7107
+LPIPS, total frame 20, total avg 0.3009, folder avg 0.3009
+tOF, total frame 19, total avg 5.1171, folder avg 5.1171
+tLP100, total frame 19, total avg 3.6811, folder avg 3.6811
+Finished.

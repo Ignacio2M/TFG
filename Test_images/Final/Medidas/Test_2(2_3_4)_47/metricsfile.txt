@@ -1,0 +1,57 @@
+[Configurations]:
+	output: ../Test_images/Final/Medidas/Test_2(2_3_4)_47/
+	results: ../Test_images/Final/Test_2(2_3_4)_47/Test_2
+	targets: ../Test_images/Original/HR/Test_2
+End of configuration
+Loading model from: /home/chona/Documentos/Uma/TFG/Git/TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/2.png
+frame 2, tar (576, 1024, 3), out (576, 1024, 3), psnr 29.85, ssim 0.75, lpips 0.36, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/3.png
+frame 3, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.50, psnr 29.87, ssim 0.77, lpips 0.37, tLPx100 0.16, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/4.png
+frame 4, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.79, psnr 29.72, ssim 0.77, lpips 0.36, tLPx100 0.51, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/5.png
+frame 5, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.62, psnr 30.03, ssim 0.77, lpips 0.37, tLPx100 0.96, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/6.png
+frame 6, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.88, psnr 30.17, ssim 0.78, lpips 0.36, tLPx100 1.47, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/7.png
+frame 7, tar (576, 1024, 3), out (576, 1024, 3), tOF 7.45, psnr 30.39, ssim 0.78, lpips 0.35, tLPx100 0.83, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/8.png
+frame 8, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.26, psnr 30.41, ssim 0.78, lpips 0.35, tLPx100 1.14, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/9.png
+frame 9, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.83, psnr 28.96, ssim 0.74, lpips 0.38, tLPx100 1.58, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/10.png
+frame 10, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.76, psnr 29.16, ssim 0.74, lpips 0.39, tLPx100 1.71, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/11.png
+frame 11, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.93, psnr 29.13, ssim 0.73, lpips 0.40, tLPx100 2.90, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/12.png
+frame 12, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.69, psnr 28.50, ssim 0.70, lpips 0.43, tLPx100 1.95, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/13.png
+frame 13, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.17, psnr 28.94, ssim 0.68, lpips 0.43, tLPx100 1.20, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/14.png
+frame 14, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.69, psnr 26.72, ssim 0.59, lpips 0.50, tLPx100 0.55, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/15.png
+frame 15, tar (576, 1024, 3), out (576, 1024, 3), tOF 7.06, psnr 27.52, ssim 0.61, lpips 0.49, tLPx100 0.64, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/16.png
+frame 16, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.59, psnr 27.93, ssim 0.63, lpips 0.49, tLPx100 1.27, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/17.png
+frame 17, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.56, psnr 27.84, ssim 0.61, lpips 0.49, tLPx100 0.62, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/18.png
+frame 18, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.60, psnr 27.82, ssim 0.62, lpips 0.46, tLPx100 0.71, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/19.png
+frame 19, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.35, psnr 27.89, ssim 0.64, lpips 0.44, tLPx100 1.27, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/20.png
+frame 20, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.67, psnr 25.73, ssim 0.56, lpips 0.51, tLPx100 0.36, crop (16, 16)
+../Test_images/Final/Test_2(2_3_4)_47/Test_2/21.png
+frame 21, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.18, psnr 27.08, ssim 0.62, lpips 0.47, tLPx100 1.31, crop (16, 16)
+PSNR_00, max 30.4122, min 25.7276, avg 28.6834
+SSIM_00, max 0.7819, min 0.5614, avg 0.6942
+LPIPS_00, max 0.5143, min 0.3476, avg 0.4198
+tOF_00, max 7.4507, min 4.6224, avg 6.1367
+tLP100_00, max 2.9026, min 0.1552, avg 1.1123
+PSNR, total frame 20, total avg 28.6834, folder avg 28.6834
+SSIM, total frame 20, total avg 0.6942, folder avg 0.6942
+LPIPS, total frame 20, total avg 0.4198, folder avg 0.4198
+tOF, total frame 19, total avg 6.1367, folder avg 6.1367
+tLP100, total frame 19, total avg 1.1123, folder avg 1.1123
+Finished.

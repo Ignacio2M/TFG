@@ -1,0 +1,57 @@
+[Configurations]:
+	output: ../TFG/Test/Net/metric_log/
+	results: ../TFG/Test/Net/Test_2
+	targets: ../TFG/Test/Orginal/Test_2
+End of configuration
+Loading model from: ../TFG/TecoGAN-master/LPIPSmodels/v0.1/alex.pth
+../TFG/Test/Net/Test_2/output_frame_2961.0.png
+frame 2, tar (576, 1024, 3), out (576, 1024, 3), psnr 28.43, ssim 0.75, lpips 0.26, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2965.0.png
+frame 3, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.14, psnr 28.91, ssim 0.75, lpips 0.25, tLPx100 4.43, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2969.0.png
+frame 4, tar (576, 1024, 3), out (576, 1024, 3), tOF 3.82, psnr 28.61, ssim 0.74, lpips 0.25, tLPx100 3.72, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2973.0.png
+frame 5, tar (576, 1024, 3), out (576, 1024, 3), tOF 3.86, psnr 29.05, ssim 0.75, lpips 0.26, tLPx100 3.41, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2977.0.png
+frame 6, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.62, psnr 29.42, ssim 0.76, lpips 0.25, tLPx100 2.65, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2981.0.png
+frame 7, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.67, psnr 29.32, ssim 0.77, lpips 0.24, tLPx100 3.20, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2985.0.png
+frame 8, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.93, psnr 29.10, ssim 0.77, lpips 0.25, tLPx100 2.88, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2989.0.png
+frame 9, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.70, psnr 28.06, ssim 0.73, lpips 0.27, tLPx100 2.75, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2993.0.png
+frame 10, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.15, psnr 28.25, ssim 0.74, lpips 0.27, tLPx100 2.59, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_2997.0.png
+frame 11, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.94, psnr 28.21, ssim 0.72, lpips 0.29, tLPx100 1.24, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3001.0.png
+frame 12, tar (576, 1024, 3), out (576, 1024, 3), tOF 4.91, psnr 27.66, ssim 0.69, lpips 0.30, tLPx100 2.68, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3005.0.png
+frame 13, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.14, psnr 27.93, ssim 0.69, lpips 0.31, tLPx100 2.85, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3009.0.png
+frame 14, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.44, psnr 26.21, ssim 0.60, lpips 0.37, tLPx100 4.14, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3013.0.png
+frame 15, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.33, psnr 26.86, ssim 0.62, lpips 0.36, tLPx100 4.41, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3017.0.png
+frame 16, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.36, psnr 27.22, ssim 0.63, lpips 0.36, tLPx100 3.81, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3021.0.png
+frame 17, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.19, psnr 27.34, ssim 0.61, lpips 0.36, tLPx100 4.67, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3025.0.png
+frame 18, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.46, psnr 27.06, ssim 0.64, lpips 0.35, tLPx100 4.89, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3029.0.png
+frame 19, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.45, psnr 27.11, ssim 0.64, lpips 0.32, tLPx100 4.33, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3033.0.png
+frame 20, tar (576, 1024, 3), out (576, 1024, 3), tOF 6.54, psnr 25.28, ssim 0.61, lpips 0.39, tLPx100 4.31, crop (16, 16)
+../TFG/Test/Net/Test_2/output_frame_3037.0.png
+frame 21, tar (576, 1024, 3), out (576, 1024, 3), tOF 5.97, psnr 26.33, ssim 0.61, lpips 0.35, tLPx100 6.65, crop (16, 16)
+PSNR_00, max 29.4202, min 25.2755, avg 27.8181
+SSIM_00, max 0.7712, min 0.5986, avg 0.6920
+LPIPS_00, max 0.3899, min 0.2440, avg 0.3026
+tOF_00, max 6.5363, min 3.8157, avg 5.1374
+tLP100_00, max 6.6521, min 1.2405, avg 3.6641
+PSNR, total frame 20, total avg 27.8181, folder avg 27.8181
+SSIM, total frame 20, total avg 0.6920, folder avg 0.6920
+LPIPS, total frame 20, total avg 0.3026, folder avg 0.3026
+tOF, total frame 19, total avg 5.1374, folder avg 5.1374
+tLP100, total frame 19, total avg 3.6641, folder avg 3.6641
+Finished.

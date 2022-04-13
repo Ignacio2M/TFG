@@ -1,2 +1,7 @@
 /Test_images/.*
 
+/Test_images/Output/
+/Test_images/Output/Net/
+/Test_images/Output/Pre/
+/Test_images/Video_Original/
+/Test_images/info.json

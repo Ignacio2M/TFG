@@ -1,16 +1,65 @@
 # TFG
 
+------
 - Virtual environment Tecogan: Python 3.7
-- Virtual environment: Python 3.10
+- Virtual environment: Python 3.9
+---
+- Original *LR*:
+- Original *HR*:
+- Pre procesado
+  - Con rotación:
+  - Sin rotación:
+- Salida de la red \*Original\*:
+- Salidas
+  - Con rotación:
+  - Sin rotación:
+- Métricas
+  - Original:
+  - Con rotación:
+  - Sin rotación:
+---
 
-# Resultados
+## Video original
+ 
+### Credits
 
-SR:https://github.com/Ignacio2M/TFG/blob/main/Transform/SR.py
+    Film By: Eric Klassen
+    Skateboarder: Ben DiDomenico
+    Skateboarder: Patrick Tran
+    Special Thanks: BC Surf & Sport, Joe Janssen, Amy Lord, Shelby Elmore, Eva Mullen
+    https://www.cablelabs.com/4k
+    
+    https://youtu.be/xp0-mVmnQJk
 
-Resultados SR: https://github.com/Ignacio2M/TFG/tree/main/Test_images/Final/Out_final 
+---
 
-Resultados Originales: https://github.com/Ignacio2M/TFG/tree/main/TecoGAN-master/results/calendar
+## Estructura de diecrtorios.
+    .
+    ├── Final
+    │   ├── Métricas
+    │   │   ├── Net
+    │   │   ├── Test_2(0_3_4)_47
+    │   │   └── Test_2(2_3_4)_47
+    │   ├── Net
+    │   ├── Test_2(0_3_4)_47
+    │   │   └── Test_2
+    │   └── Test_2(2_3_4)_47
+    │       └── Test_2
+    ├── Original
+    │   ├── HR
+    │   │   └── Test_2
+    │   └── LR
+    │       └── Test_2
+    └── Output
+        ├── Net
+        │   ├── Test_2(0_3_4)_47
+        │   │   └── Test_2
+        │   └── Test_2(2_3_4)_47
+        │       └── Test_2
+        └── Pre
+            ├── Test_2(0_3_4)_47
+            │   └── Test_2
+            └── Test_2(2_3_4)_47
+                └── Test_2
+ 
 
-# Dtatset
-
-ucf101: https://www.crcv.ucf.edu/research/data-sets/ucf101/
